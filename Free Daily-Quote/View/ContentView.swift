@@ -6,6 +6,7 @@
 //
 import SwiftUI
 
+
 struct ContentView: View {
     @EnvironmentObject var model: ContentModel
     
@@ -19,12 +20,15 @@ struct ContentView: View {
                     Text(model.title)
                         .font(.title)
                     Spacer()
+                    
                     let uiImage = UIImage(data: model.imageData)
                            Image(uiImage: uiImage ?? UIImage())
                             .resizable()
                             .frame(width: geometry.size.width, height: geometry.size.height/3)
                             .scaledToFit()
                              
+                        
+                        
                         Spacer()
                         Text(model.quote)
                         .font(.headline)
@@ -50,7 +54,13 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    
+    @EnvironmentObject var model: ContentModel
+
     static var previews: some View {
+        
+       
         ContentView()
+            .environmentObject(ContentModel(preview: true))
     }
 }

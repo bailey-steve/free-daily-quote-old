@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46121468BB2A21A6C69B2BD3 /* Pods_Free_Daily_Quote_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10607D6523F6B0BF642A97B8 /* Pods_Free_Daily_Quote_WatchKit_App.framework */; };
 		92F7C13126F0B78000B8437B /* Free_Daily_QuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */; };
 		92F7C13326F0B78000B8437B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C13226F0B78000B8437B /* ContentView.swift */; };
 		92F7C13526F0B78200B8437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C13426F0B78200B8437B /* Assets.xcassets */; };
@@ -45,6 +46,10 @@
 		92F7C19526F0C07000B8437B /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18A26F0C06F00B8437B /* Copyright.swift */; };
 		92F7C19726F0C0B900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C19626F0C0B800B8437B /* ContentModel.swift */; };
 		92F7C19826F0C0B900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C19626F0C0B800B8437B /* ContentModel.swift */; };
+		92F7C19A26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */; };
+		92F7C19B26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */; };
+		96BB33CE685DA00E0D487012 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121CE39CC87ECEABEF071116 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework */; };
+		B592188E53F096C0538ED7AA /* Pods_Free_Daily_Quote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10607D6523F6B0BF642A97B8 /* Pods_Free_Daily_Quote_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free_Daily_Quote_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		121CE39CC87ECEABEF071116 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free_Daily_Quote_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		397696FAAA972B9853E1D5B6 /* Pods-Free Daily-Quote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote.debug.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote.debug.xcconfig"; sourceTree = "<group>"; };
+		4F190FF6CBDCDAB3E2684CAD /* Pods-Free Daily-Quote WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit Extension/Pods-Free Daily-Quote WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		59C4EDE658621C3D8D931827 /* Pods-Free Daily-Quote WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit App/Pods-Free Daily-Quote WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		66ED67A62FBC3FDEB2038861 /* Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit Extension/Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		92F7C12D26F0B78000B8437B /* Free Daily-Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Daily-Quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Daily_QuoteApp.swift; sourceTree = "<group>"; };
 		92F7C13226F0B78000B8437B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -123,6 +134,10 @@
 		92F7C18A26F0C06F00B8437B /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Copyright.swift; path = "Free Daily-Quote/Model/Copyright.swift"; sourceTree = SOURCE_ROOT; };
 		92F7C18B26F0C07000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Free Daily-Quote WatchKit App-Bridging-Header.h"; path = "Free Daily-Quote/Model/Free Daily-Quote WatchKit App-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		92F7C19626F0C0B800B8437B /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentModel.swift; path = "Free Daily-Quote/ViewModel/ContentModel.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free_Daily_Quote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1432DF0EC71DC73AFDDCC0C /* Pods-Free Daily-Quote WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit App/Pods-Free Daily-Quote WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		EF4DEA36C32F562C32B31333 /* Pods-Free Daily-Quote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +145,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B592188E53F096C0538ED7AA /* Pods_Free_Daily_Quote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +153,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BB33CE685DA00E0D487012 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD1F8ED1F564B0E0D11D9940 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46121468BB2A21A6C69B2BD3 /* Pods_Free_Daily_Quote_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA1E6031D8C455737E7FDE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				397696FAAA972B9853E1D5B6 /* Pods-Free Daily-Quote.debug.xcconfig */,
+				EF4DEA36C32F562C32B31333 /* Pods-Free Daily-Quote.release.xcconfig */,
+				C1432DF0EC71DC73AFDDCC0C /* Pods-Free Daily-Quote WatchKit App.debug.xcconfig */,
+				59C4EDE658621C3D8D931827 /* Pods-Free Daily-Quote WatchKit App.release.xcconfig */,
+				66ED67A62FBC3FDEB2038861 /* Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig */,
+				4F190FF6CBDCDAB3E2684CAD /* Pods-Free Daily-Quote WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92DA9BC681BE134D41E4B853 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */,
+				10607D6523F6B0BF642A97B8 /* Pods_Free_Daily_Quote_WatchKit_App.framework */,
+				121CE39CC87ECEABEF071116 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92F7C12426F0B78000B8437B = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +199,8 @@
 				92F7C14026F0B78200B8437B /* Free Daily-Quote WatchKit App */,
 				92F7C14C26F0B78300B8437B /* Free Daily-Quote WatchKit Extension */,
 				92F7C12E26F0B78000B8437B /* Products */,
+				0CA1E6031D8C455737E7FDE0 /* Pods */,
+				92DA9BC681BE134D41E4B853 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -173,6 +224,7 @@
 				92F7C16B26F0B8E900B8437B /* Constants */,
 				92F7C13426F0B78200B8437B /* Assets.xcassets */,
 				92F7C13926F0B78200B8437B /* Info.plist */,
+				92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */,
 				92F7C13626F0B78200B8437B /* Preview Content */,
 			);
 			path = "Free Daily-Quote";
@@ -301,10 +353,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F7C16826F0B78300B8437B /* Build configuration list for PBXNativeTarget "Free Daily-Quote" */;
 			buildPhases = (
+				5DDE953EE935DFD7FF239E63 /* [CP] Check Pods Manifest.lock */,
 				92F7C12926F0B78000B8437B /* Sources */,
 				92F7C12A26F0B78000B8437B /* Frameworks */,
 				92F7C12B26F0B78000B8437B /* Resources */,
 				92F7C16726F0B78300B8437B /* Embed Watch Content */,
+				354D6B68FD98487432E6FF6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,8 +374,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F7C16426F0B78300B8437B /* Build configuration list for PBXNativeTarget "Free Daily-Quote WatchKit App" */;
 			buildPhases = (
+				190A525FDE6D8D17881D156B /* [CP] Check Pods Manifest.lock */,
 				92F7C13A26F0B78200B8437B /* Resources */,
 				92F7C16326F0B78300B8437B /* Embed App Extensions */,
+				BD1F8ED1F564B0E0D11D9940 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -337,6 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92F7C16026F0B78300B8437B /* Build configuration list for PBXNativeTarget "Free Daily-Quote WatchKit Extension" */;
 			buildPhases = (
+				601CC874AB4E0CAA2CA80593 /* [CP] Check Pods Manifest.lock */,
 				92F7C14426F0B78300B8437B /* Sources */,
 				92F7C14526F0B78300B8437B /* Frameworks */,
 				92F7C14626F0B78300B8437B /* Resources */,
@@ -398,6 +455,7 @@
 			files = (
 				92F7C13826F0B78200B8437B /* Preview Assets.xcassets in Resources */,
 				92F7C13526F0B78200B8437B /* Assets.xcassets in Resources */,
+				92F7C19A26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +473,97 @@
 			files = (
 				92F7C15B26F0B78300B8437B /* Preview Assets.xcassets in Resources */,
 				92F7C15826F0B78300B8437B /* Assets.xcassets in Resources */,
+				92F7C19B26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190A525FDE6D8D17881D156B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Free Daily-Quote WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		354D6B68FD98487432E6FF6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DDE953EE935DFD7FF239E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Free Daily-Quote-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		601CC874AB4E0CAA2CA80593 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Free Daily-Quote WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92F7C12926F0B78000B8437B /* Sources */ = {
@@ -595,6 +740,7 @@
 		};
 		92F7C16126F0B78300B8437B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66ED67A62FBC3FDEB2038861 /* Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +765,7 @@
 		};
 		92F7C16226F0B78300B8437B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F190FF6CBDCDAB3E2684CAD /* Pods-Free Daily-Quote WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +791,7 @@
 		};
 		92F7C16526F0B78300B8437B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1432DF0EC71DC73AFDDCC0C /* Pods-Free Daily-Quote WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -672,6 +820,7 @@
 		};
 		92F7C16626F0B78300B8437B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C4EDE658621C3D8D931827 /* Pods-Free Daily-Quote WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -700,6 +849,7 @@
 		};
 		92F7C16926F0B78300B8437B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 397696FAAA972B9853E1D5B6 /* Pods-Free Daily-Quote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -723,6 +873,7 @@
 		};
 		92F7C16A26F0B78300B8437B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF4DEA36C32F562C32B31333 /* Pods-Free Daily-Quote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

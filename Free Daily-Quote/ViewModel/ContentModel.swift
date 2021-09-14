@@ -9,9 +9,9 @@ import Foundation
 
 class ContentModel: ObservableObject {
     
-    @Published var  quote : String = ""
+    @Published var  quote : String = "quote"
     //@Published var  length : String
-    @Published var  author : String = ""
+    @Published var  author : String = "author"
     //@Published var  tags : [String]
     //@Published var  category : String
     //@Published var  language : String
@@ -19,12 +19,30 @@ class ContentModel: ObservableObject {
     //@Published var  permalink : String
     //@Published var  id : String
     @Published var  background : String = ""
-    @Published var  title : String = ""
+    @Published var  title : String = "title"
     
     @Published var imageData: Data = Data()
     
-    init() {
+    init(preview:Bool = false) {
         
+        if preview {
+            
+            self.quote = "Live as if you were to die tomorrow. Learn as if you were to live forever."
+            //self.length = localQuote.length  ?? ""
+            self.author =  "Mahatma Gandhi"
+            // self.tags = localQuote.tags
+            //self.category = localQuote.category ?? ""
+            //self.language = localQuote.language ?? ""
+            //self.date = localQuote.date  ?? ""
+            //self.permalink = localQuote.permalink ?? ""
+            //self.id = localQuote.id ?? ""
+            self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
+            self.title =  "Quote"
+            
+            self.getImageData()
+            
+            return
+        }
         
         var request = URLRequest(url: URL(string: "https://quotes.rest/qod")!);
         
