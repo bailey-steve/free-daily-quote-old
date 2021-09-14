@@ -21,6 +21,30 @@
 		92F7C15626F0B78300B8437B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C15526F0B78300B8437B /* ComplicationController.swift */; };
 		92F7C15826F0B78300B8437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C15726F0B78300B8437B /* Assets.xcassets */; };
 		92F7C15B26F0B78300B8437B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C15A26F0B78300B8437B /* Preview Assets.xcassets */; };
+		92F7C17126F0B98100B8437B /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17026F0B98100B8437B /* Contents.swift */; };
+		92F7C17226F0B98100B8437B /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17026F0B98100B8437B /* Contents.swift */; };
+		92F7C17426F0B99900B8437B /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17326F0B99900B8437B /* Copyright.swift */; };
+		92F7C17526F0B99900B8437B /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17326F0B99900B8437B /* Copyright.swift */; };
+		92F7C17726F0BBBB00B8437B /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17626F0BBBB00B8437B /* Json4Swift_Base.swift */; };
+		92F7C17826F0BBBB00B8437B /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17626F0BBBB00B8437B /* Json4Swift_Base.swift */; };
+		92F7C17A26F0BBCD00B8437B /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17926F0BBCD00B8437B /* Quotes.swift */; };
+		92F7C17B26F0BBCD00B8437B /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17926F0BBCD00B8437B /* Quotes.swift */; };
+		92F7C17D26F0BBDA00B8437B /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17C26F0BBDA00B8437B /* Success.swift */; };
+		92F7C17E26F0BBDA00B8437B /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17C26F0BBDA00B8437B /* Success.swift */; };
+		92F7C18026F0BBF900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17F26F0BBF900B8437B /* ContentModel.swift */; };
+		92F7C18126F0BBF900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C17F26F0BBF900B8437B /* ContentModel.swift */; };
+		92F7C18C26F0C07000B8437B /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18626F0C06F00B8437B /* Quotes.swift */; };
+		92F7C18D26F0C07000B8437B /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18626F0C06F00B8437B /* Quotes.swift */; };
+		92F7C18E26F0C07000B8437B /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18726F0C06F00B8437B /* Contents.swift */; };
+		92F7C18F26F0C07000B8437B /* Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18726F0C06F00B8437B /* Contents.swift */; };
+		92F7C19026F0C07000B8437B /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18826F0C06F00B8437B /* Success.swift */; };
+		92F7C19126F0C07000B8437B /* Success.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18826F0C06F00B8437B /* Success.swift */; };
+		92F7C19226F0C07000B8437B /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18926F0C06F00B8437B /* Json4Swift_Base.swift */; };
+		92F7C19326F0C07000B8437B /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18926F0C06F00B8437B /* Json4Swift_Base.swift */; };
+		92F7C19426F0C07000B8437B /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18A26F0C06F00B8437B /* Copyright.swift */; };
+		92F7C19526F0C07000B8437B /* Copyright.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C18A26F0C06F00B8437B /* Copyright.swift */; };
+		92F7C19726F0C0B900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C19626F0C0B800B8437B /* ContentModel.swift */; };
+		92F7C19826F0C0B900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C19626F0C0B800B8437B /* ContentModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +109,20 @@
 		92F7C15A26F0B78300B8437B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92F7C15C26F0B78300B8437B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92F7C15D26F0B78300B8437B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		92F7C16F26F0B98000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Free Daily-Quote WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		92F7C17026F0B98100B8437B /* Contents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contents.swift; sourceTree = "<group>"; };
+		92F7C17326F0B99900B8437B /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Copyright.swift; sourceTree = "<group>"; };
+		92F7C17626F0BBBB00B8437B /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Json4Swift_Base.swift; sourceTree = "<group>"; };
+		92F7C17926F0BBCD00B8437B /* Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		92F7C17C26F0BBDA00B8437B /* Success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Success.swift; sourceTree = "<group>"; };
+		92F7C17F26F0BBF900B8437B /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		92F7C18626F0C06F00B8437B /* Quotes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Quotes.swift; path = "Free Daily-Quote/Model/Quotes.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C18726F0C06F00B8437B /* Contents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Contents.swift; path = "Free Daily-Quote/Model/Contents.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C18826F0C06F00B8437B /* Success.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Success.swift; path = "Free Daily-Quote/Model/Success.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C18926F0C06F00B8437B /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json4Swift_Base.swift; path = "Free Daily-Quote/Model/Json4Swift_Base.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C18A26F0C06F00B8437B /* Copyright.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Copyright.swift; path = "Free Daily-Quote/Model/Copyright.swift"; sourceTree = SOURCE_ROOT; };
+		92F7C18B26F0C07000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Free Daily-Quote WatchKit App-Bridging-Header.h"; path = "Free Daily-Quote/Model/Free Daily-Quote WatchKit App-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		92F7C19626F0C0B800B8437B /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentModel.swift; path = "Free Daily-Quote/ViewModel/ContentModel.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */,
-				92F7C13226F0B78000B8437B /* ContentView.swift */,
+				92F7C16E26F0B91900B8437B /* View */,
+				92F7C16D26F0B90700B8437B /* ViewModel */,
+				92F7C16C26F0B8FA00B8437B /* Model */,
+				92F7C16B26F0B8E900B8437B /* Constants */,
 				92F7C13426F0B78200B8437B /* Assets.xcassets */,
 				92F7C13926F0B78200B8437B /* Info.plist */,
 				92F7C13626F0B78200B8437B /* Preview Content */,
@@ -158,7 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				92F7C14D26F0B78300B8437B /* Free_Daily_QuoteApp.swift */,
-				92F7C14F26F0B78300B8437B /* ContentView.swift */,
+				92F7C18526F0BF5500B8437B /* Constants */,
+				92F7C18426F0BF4C00B8437B /* Views */,
+				92F7C18326F0BF2000B8437B /* ViewModels */,
+				92F7C18226F0BF1400B8437B /* Models */,
 				92F7C15126F0B78300B8437B /* NotificationController.swift */,
 				92F7C15326F0B78300B8437B /* NotificationView.swift */,
 				92F7C15526F0B78300B8437B /* ComplicationController.swift */,
@@ -176,6 +220,78 @@
 				92F7C15A26F0B78300B8437B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92F7C16B26F0B8E900B8437B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		92F7C16C26F0B8FA00B8437B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C17326F0B99900B8437B /* Copyright.swift */,
+				92F7C17926F0BBCD00B8437B /* Quotes.swift */,
+				92F7C17C26F0BBDA00B8437B /* Success.swift */,
+				92F7C17026F0B98100B8437B /* Contents.swift */,
+				92F7C17626F0BBBB00B8437B /* Json4Swift_Base.swift */,
+				92F7C16F26F0B98000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		92F7C16D26F0B90700B8437B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C17F26F0BBF900B8437B /* ContentModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		92F7C16E26F0B91900B8437B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C13226F0B78000B8437B /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		92F7C18226F0BF1400B8437B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C18726F0C06F00B8437B /* Contents.swift */,
+				92F7C18A26F0C06F00B8437B /* Copyright.swift */,
+				92F7C18B26F0C07000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */,
+				92F7C18926F0C06F00B8437B /* Json4Swift_Base.swift */,
+				92F7C18626F0C06F00B8437B /* Quotes.swift */,
+				92F7C18826F0C06F00B8437B /* Success.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92F7C18326F0BF2000B8437B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C19626F0C0B800B8437B /* ContentModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		92F7C18426F0BF4C00B8437B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				92F7C14F26F0B78300B8437B /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		92F7C18526F0BF5500B8437B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +364,7 @@
 					};
 					92F7C13B26F0B78200B8437B = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					92F7C14726F0B78300B8437B = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -309,7 +426,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F7C13326F0B78000B8437B /* ContentView.swift in Sources */,
+				92F7C18E26F0C07000B8437B /* Contents.swift in Sources */,
+				92F7C18026F0BBF900B8437B /* ContentModel.swift in Sources */,
+				92F7C17126F0B98100B8437B /* Contents.swift in Sources */,
+				92F7C19026F0C07000B8437B /* Success.swift in Sources */,
+				92F7C19726F0C0B900B8437B /* ContentModel.swift in Sources */,
+				92F7C19226F0C07000B8437B /* Json4Swift_Base.swift in Sources */,
+				92F7C19426F0C07000B8437B /* Copyright.swift in Sources */,
+				92F7C17A26F0BBCD00B8437B /* Quotes.swift in Sources */,
 				92F7C13126F0B78000B8437B /* Free_Daily_QuoteApp.swift in Sources */,
+				92F7C17D26F0BBDA00B8437B /* Success.swift in Sources */,
+				92F7C17726F0BBBB00B8437B /* Json4Swift_Base.swift in Sources */,
+				92F7C17426F0B99900B8437B /* Copyright.swift in Sources */,
+				92F7C18C26F0C07000B8437B /* Quotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +447,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F7C15226F0B78300B8437B /* NotificationController.swift in Sources */,
+				92F7C17226F0B98100B8437B /* Contents.swift in Sources */,
 				92F7C15026F0B78300B8437B /* ContentView.swift in Sources */,
+				92F7C19526F0C07000B8437B /* Copyright.swift in Sources */,
+				92F7C17E26F0BBDA00B8437B /* Success.swift in Sources */,
 				92F7C15626F0B78300B8437B /* ComplicationController.swift in Sources */,
+				92F7C17526F0B99900B8437B /* Copyright.swift in Sources */,
+				92F7C17826F0BBBB00B8437B /* Json4Swift_Base.swift in Sources */,
+				92F7C18126F0BBF900B8437B /* ContentModel.swift in Sources */,
+				92F7C19326F0C07000B8437B /* Json4Swift_Base.swift in Sources */,
+				92F7C18D26F0C07000B8437B /* Quotes.swift in Sources */,
 				92F7C14E26F0B78300B8437B /* Free_Daily_QuoteApp.swift in Sources */,
+				92F7C19826F0C0B900B8437B /* ContentModel.swift in Sources */,
 				92F7C15426F0B78300B8437B /* NotificationView.swift in Sources */,
+				92F7C19126F0C07000B8437B /* Success.swift in Sources */,
+				92F7C18F26F0C07000B8437B /* Contents.swift in Sources */,
+				92F7C17B26F0BBCD00B8437B /* Quotes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,14 +648,22 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFU4NT5A6T;
 				IBSC_MODULE = Free_Daily_Quote_WatchKit_Extension;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SalmTK.Free-Daily-Quote.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Free Daily-Quote/Model/Free Daily-Quote WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.4;
@@ -527,14 +676,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TFU4NT5A6T;
 				IBSC_MODULE = Free_Daily_Quote_WatchKit_Extension;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.SalmTK.Free-Daily-Quote.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Free Daily-Quote/Model/Free Daily-Quote WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;

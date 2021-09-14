@@ -13,6 +13,8 @@ struct Free_Daily_QuoteApp: App {
         WindowGroup {
             NavigationView {
                 ContentView()
+                    .environmentObject(ContentModel())
+                
             }
         }
 
