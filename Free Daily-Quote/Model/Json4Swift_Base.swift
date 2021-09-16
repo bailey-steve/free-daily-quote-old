@@ -13,10 +13,10 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct Json4Swift_Base : Codable {
-	let success : Success?
-	let contents : Contents?
-	let baseurl : String?
-	let copyright : Copyright?
+	var success : Success? = nil
+	var contents : Contents? = nil
+	var baseurl : String? = nil
+	var copyright : Copyright? = nil
 
 	enum CodingKeys: String, CodingKey {
 
@@ -27,11 +27,16 @@ struct Json4Swift_Base : Codable {
 	}
 
 	init(from decoder: Decoder) throws {
-		let values = try decoder.container(keyedBy: CodingKeys.self)
-		success = try values.decodeIfPresent(Success.self, forKey: .success)
-		contents = try values.decodeIfPresent(Contents.self, forKey: .contents)
-		baseurl = try values.decodeIfPresent(String.self, forKey: .baseurl)
-		copyright = try values.decodeIfPresent(Copyright.self, forKey: .copyright)
+        do {
+            let values = try decoder.container(keyedBy: CodingKeys.self)
+            success = try values.decodeIfPresent(Success.self, forKey: .success)
+            contents = try values.decodeIfPresent(Contents.self, forKey: .contents)
+            baseurl = try values.decodeIfPresent(String.self, forKey: .baseurl)
+            copyright = try values.decodeIfPresent(Copyright.self, forKey: .copyright)
+        } catch {
+            print("Json4Swith_Base \(error)")
+        }
+
 	}
 
 }

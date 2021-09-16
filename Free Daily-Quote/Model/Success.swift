@@ -13,7 +13,7 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct Success : Codable {
-	let total : Int?
+	var total : Int = 0
 
 	enum CodingKeys: String, CodingKey {
 
@@ -22,7 +22,13 @@ struct Success : Codable {
 
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		total = try values.decodeIfPresent(Int.self, forKey: .total)
+        
+        do{
+            let value = try values.decodeIfPresent(Int.self, forKey: .total)!
+            total = value
+            
+        } catch {}
+		
 	}
 
 }

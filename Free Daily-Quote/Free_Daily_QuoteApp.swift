@@ -25,9 +25,11 @@ struct Free_Daily_QuoteApp: App {
         
     }
     var body: some Scene {
+
         WindowGroup {
             ContentView()
                 .environmentObject(ContentModel())
+
             
         }
     }

@@ -17,7 +17,7 @@ class ContentModel: ObservableObject {
     //@Published var  language : String
     //@Published var  date : String
     //@Published var  permalink : String
-    //@Published var  id : String
+    @Published var  id : String = "99999"
     @Published var  background : String = ""
     @Published var  title : String = "title"
     
@@ -35,7 +35,7 @@ class ContentModel: ObservableObject {
             //self.language = localQuote.language ?? ""
             //self.date = localQuote.date  ?? ""
             //self.permalink = localQuote.permalink ?? ""
-            //self.id = localQuote.id ?? ""
+            self.id = "12345"
             self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
             self.title =  "Quote"
             
@@ -43,6 +43,10 @@ class ContentModel: ObservableObject {
             
             return
         }
+        
+        getQuote()
+    }
+    func getQuote(){
         
         var request = URLRequest(url: URL(string: "https://quotes.rest/qod")!);
         
@@ -54,8 +58,13 @@ class ContentModel: ObservableObject {
         
         URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
             do {
-                //print(data!)
-                //print(response!)
+                print(data!)
+                print(response!)
+                
+                if error != nil {
+                    print(error!)
+                }
+                
                 let jsonDecoder = JSONDecoder()
                 // Access the response here by using json model class
                 // You can autogenerate Json4Swift_Base swift class below by pasting the JSON response in
@@ -66,23 +75,24 @@ class ContentModel: ObservableObject {
                 
                 let localQuote = responseModel.contents!.quotes![0]
                 DispatchQueue.main.async {
-                    self.quote = localQuote.quote ?? ""
+                    self.quote = localQuote.quote
                     //self.length = localQuote.length  ?? ""
-                    self.author = localQuote.author ?? ""
+                    self.author = localQuote.author
                     // self.tags = localQuote.tags
                     //self.category = localQuote.category ?? ""
                     //self.language = localQuote.language ?? ""
                     //self.date = localQuote.date  ?? ""
                     //self.permalink = localQuote.permalink ?? ""
-                    //self.id = localQuote.id ?? ""
-                    self.background = localQuote.background ?? ""
-                    self.title = localQuote.title ?? ""
+                    self.id = localQuote.id
+                    self.background = localQuote.background
+                    self.title = localQuote.title
                     
                     self.getImageData()
                 }
                 print(self.quote)
                 
             } catch {
+                    print(error)
                 print("JSON Serialization error")
             }
         }).resume()

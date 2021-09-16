@@ -13,8 +13,8 @@ For support, please feel free to contact me at https://www.linkedin.com/in/syeda
 
 import Foundation
 struct Copyright : Codable {
-	let year : Int?
-	let url : String?
+	var year : Int = 2021
+	var url : String = "https://theysaidso.com"
 
 	enum CodingKeys: String, CodingKey {
 
@@ -24,8 +24,17 @@ struct Copyright : Codable {
 
 	init(from decoder: Decoder) throws {
 		let values = try decoder.container(keyedBy: CodingKeys.self)
-		year = try values.decodeIfPresent(Int.self, forKey: .year)
-		url = try values.decodeIfPresent(String.self, forKey: .url)
+        
+        do{
+            let value : Int = try values.decodeIfPresent(Int.self, forKey: .year)!
+            year = value
+        } catch{}
+		
+        do{
+            let value = try values.decodeIfPresent(String.self, forKey: .url)!
+            url = value
+        } catch{}
+		
 	}
 
 }
