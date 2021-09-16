@@ -18,41 +18,34 @@ struct ContentView: View {
             let uiImage = UIImage(data: model.imageData)
             Image(uiImage: uiImage ?? UIImage())
                 .resizable()
-
-            VStack(){
                 
                 VStack(alignment: .center){
                     
                     Spacer()
-                   
                     
-                        Text(model.title)
-                            .font(.title)
-                            .foregroundColor(.white)
-                            
+                    TextWithBackingView(textValue: model.title)
+                        .font(.headline)
                         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
                             model.getQuote()
                         }
+                    
+                    Spacer()
+
+                    TextWithBackingView(textValue: model.quote)
+                        .font(.headline)
 
                     Spacer()
-                    Text(model.quote)
-                        .font(.headline)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
-                    Spacer()
-                    Text("Author: \(model.author)")
+                    
+                    TextWithBackingView(textValue: "Author: \(model.author)")
                         .font(.caption)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.white)
+
                     Spacer()
-                }
-                
-                
+
                 GADBannerViewController()
                     .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
             }
             
-
+            
             
         }
         .ignoresSafeArea()
