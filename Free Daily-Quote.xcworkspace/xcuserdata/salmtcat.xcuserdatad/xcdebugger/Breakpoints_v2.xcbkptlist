@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "CDC86131-26A5-49C5-A07E-2E5648FF94A9"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/ViewModel/ContentModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ContentModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - 96bdcc38fecbbf66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of Free_Daily_Quote.ContentModel.quote : Swift.String"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - a69e17ccd67a7f58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.quote.getter : Swift.String"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - 5d609cc265614f2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.quote.setter : Swift.String"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "145">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - 669c8ba8c18921d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.quote.modify : Swift.String"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - e78dd51f4f5b992c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.quote.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - 1d5de0b42b0f1235"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.$quote.getter : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - cd484b7a0e2d4e09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.$quote.setter : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "233">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - 17119145f62a3e10"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.$quote.modify : Combine.Published&lt;Swift.String&gt;.Publisher"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  uuid = "8949CB78-EFE0-47F1-BCF1-0A0CC227FC91 - a34cc146b936764d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Free_Daily_Quote.ContentModel.$quote.modify : Combine.Published&lt;Swift.String&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Free Daily-Quote"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/salmtcat/Documents/Code/free-daily-quote/Free%20Daily-Quote/ViewModel/ContentModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "17">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7D427DF5-8FD1-40A3-835E-5D228DA7C5A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/ViewModel/ContentModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "getQuote()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "90D3AF17-1397-411B-B127-F97CD60A6294"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/ViewModel/ContentModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "getQuote()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF97AA2F-69EF-46D6-A3AC-15456C9AE394"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Json4Swift_Base.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "Json4Swift_Base"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D43B110-184F-40F4-AB35-4FF707BE8C4C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Json4Swift_Base.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0262FDB7-3CBB-43B9-B732-B6E5BA903694"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Json4Swift_Base.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B12DAEFE-BFAF-4190-B929-32DA872F5AEB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Contents.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5476E95A-3B0C-4445-A5D6-4EE291C2058C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Contents.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8EB482DB-A935-4597-8E3C-8A5D02B8A898"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Quotes.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32595179-2777-445D-97A3-7EF76DFB3725"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/Model/Copyright.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBD4BF94-39A6-46FC-A954-6E7925431FDC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/ViewModel/ContentModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "getQuote()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "950120BD-F8E3-44A6-9F61-D8D7A8B755B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Free Daily-Quote/View/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

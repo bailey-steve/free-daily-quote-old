@@ -2,7 +2,7 @@
 //  Banner.swift
 //  Free Daily-Quote
 //
-//  Created by user198386 on 15/09/2021.
+//  Created by Steve Bailey on 15/09/2021.
 //
 
 import GoogleMobileAds

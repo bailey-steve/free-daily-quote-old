@@ -2,24 +2,24 @@
 //  ContentModel.swift
 //  RandomQuotes
 //
-//  Created by user198386 on 13/09/2021.
+//  Created by Steve Bailey on 13/09/2021.
 //
 
 import Foundation
 
 class ContentModel: ObservableObject {
     
-    @Published var  quote : String = "quote"
-    //@Published var  length : String
-    @Published var  author : String = "author"
-    //@Published var  tags : [String]
-    //@Published var  category : String
-    //@Published var  language : String
-    //@Published var  date : String
-    //@Published var  permalink : String
-    @Published var  id : String = "99999"
+    @Published var  quote : String = "Fetching Quote"
+    @Published var  length : String = ""
+    @Published var  author : String = ""
+    @Published var  tags : [String] = ["None"]
+    @Published var  category : String = ""
+    @Published var  language : String = ""
+    @Published var  date : String  = ""
+    @Published var  permalink : String = ""
+    @Published var  id : String = ""
     @Published var  background : String = ""
-    @Published var  title : String = "title"
+    @Published var  title : String = ""
     
     @Published var imageData: Data = Data()
     
@@ -28,13 +28,13 @@ class ContentModel: ObservableObject {
         if preview {
             
             self.quote = "Live as if you were to die tomorrow. Learn as if you were to live forever."
-            //self.length = localQuote.length  ?? ""
+            self.length = "1"
             self.author =  "Mahatma Gandhi"
-            // self.tags = localQuote.tags
-            //self.category = localQuote.category ?? ""
-            //self.language = localQuote.language ?? ""
-            //self.date = localQuote.date  ?? ""
-            //self.permalink = localQuote.permalink ?? ""
+            self.tags = ["None"]
+            self.category = "General"
+            self.language = "en"
+            self.date = "01/01/2022"
+            self.permalink = "https://theysaidso.com/quote/japanese-proverb-vision-without-action-is-daydream-action-without-vision-is-nigh"
             self.id = "12345"
             self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
             self.title =  "Quote"
@@ -66,23 +66,19 @@ class ContentModel: ObservableObject {
                 }
                 
                 let jsonDecoder = JSONDecoder()
-                // Access the response here by using json model class
-                // You can autogenerate Json4Swift_Base swift class below by pasting the JSON response in
-                // the webpage http://www.json4swift.com
                 let responseModel = try jsonDecoder.decode(Json4Swift_Base.self, from: data!)
                 //print(responseModel)
-                
-                
+
                 let localQuote = responseModel.contents!.quotes![0]
                 DispatchQueue.main.async {
                     self.quote = localQuote.quote
-                    //self.length = localQuote.length  ?? ""
+                    self.length = localQuote.length
                     self.author = localQuote.author
-                    // self.tags = localQuote.tags
-                    //self.category = localQuote.category ?? ""
-                    //self.language = localQuote.language ?? ""
-                    //self.date = localQuote.date  ?? ""
-                    //self.permalink = localQuote.permalink ?? ""
+                    self.tags = localQuote.tags
+                    self.category = localQuote.category
+                    self.language = localQuote.language
+                    self.date = localQuote.date
+                    self.permalink = localQuote.permalink
                     self.id = localQuote.id
                     self.background = localQuote.background
                     self.title = localQuote.title
@@ -99,11 +95,6 @@ class ContentModel: ObservableObject {
     }
     
     func getImageData() {
-        
-        // Check that image url isn't nil
-        //guard background != nil else {
-        //    return
-        //}
         
         // Download the data for the image
         if let url = URL(string: background){

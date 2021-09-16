@@ -11,9 +11,16 @@ struct ContentView: View {
     
     @EnvironmentObject var model: ContentModel
 
+    init() {
+        
+    }
+    
+    
     var body: some View {
+
         Text(model.quote)
             .padding()
+        
     }
 }
 

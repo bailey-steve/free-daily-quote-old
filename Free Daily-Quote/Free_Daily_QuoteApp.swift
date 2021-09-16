@@ -30,7 +30,6 @@ struct Free_Daily_QuoteApp: App {
             ContentView()
                 .environmentObject(ContentModel())
 
-            
         }
     }
 }

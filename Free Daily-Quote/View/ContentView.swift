@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  Free Daily-Quote
+//  Free Daily Quote
 //
-//  Created by user198386 on 14/09/2021.
+//  Created by Steve Bailey on 14/09/2021.
 //
 import SwiftUI
 import GoogleMobileAds
@@ -10,50 +10,52 @@ import GoogleMobileAds
 
 struct ContentView: View {
     @EnvironmentObject var model: ContentModel
-
+    
     var body: some View {
         
-        VStack(){
-            
-            VStack(alignment: .center){
-                
-                Spacer()
-                Text(model.title)
-                    .font(.title)
-                    .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
-                        model.getQuote()
-                    }
+        ZStack()
+        {
+            let uiImage = UIImage(data: model.imageData)
+            Image(uiImage: uiImage ?? UIImage())
+                .resizable()
 
-                Spacer()
+            VStack(){
                 
-                let uiImage = UIImage(data: model.imageData)
-                Image(uiImage: uiImage ?? UIImage())
-                    .resizable()
-                    .scaledToFit()
+                VStack(alignment: .center){
+                    
+                    Spacer()
+                   
+                    
+                        Text(model.title)
+                            .font(.title)
+                            .foregroundColor(.white)
+                            
+                        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+                            model.getQuote()
+                        }
+
+                    Spacer()
+                    Text(model.quote)
+                        .font(.headline)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                    Spacer()
+                    Text("Author: \(model.author)")
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                    Spacer()
+                }
                 
-                Spacer()
-                Text(model.quote)
-                    .font(.headline)
-                    .multilineTextAlignment(.center)
-                Spacer()
-                Text("Author: \(model.author)")
-                    .font(.caption)
-                    .multilineTextAlignment(.center)
-                Spacer()
+                
+                GADBannerViewController()
+                    .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
             }
             
+
             
-            GADBannerViewController()
-                .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
         }
-        
         .ignoresSafeArea()
-        
-        
-        
-        
-        
-        
     }
 }
 
