@@ -12,7 +12,9 @@ struct Quotes : Codable {
 	var id : String = ""
 	var background : String = ""
 	var title : String = ""
-
+    
+    var random: Int = -1
+    
 	enum CodingKeys: String, CodingKey {
 
 		case quote = "quote"
@@ -87,9 +89,12 @@ struct Quotes : Codable {
             let value = try values.decodeIfPresent(String.self, forKey: .title)!
             title = value
         } catch {}
+        
+        random = Int.random(in: 1..<5000)
 		
 	}
 
     
     
 }
+

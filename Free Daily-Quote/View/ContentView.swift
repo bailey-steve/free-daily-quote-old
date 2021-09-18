@@ -25,14 +25,13 @@ struct ContentView: View {
                     
                     TextWithBackingView(textValue: model.title)
                         .font(.headline)
-                        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
-                            model.getQuote()
-                        }
-                    
+
+                    //TextWithBackingView(textValue: String(model.random))
                     Spacer()
 
                     TextWithBackingView(textValue: model.quote)
                         .font(.headline)
+                        
 
                     Spacer()
                     
@@ -49,6 +48,9 @@ struct ContentView: View {
             
         }
         .ignoresSafeArea()
+        .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
+            model.getQuote()
+        }
     }
 }
 
@@ -62,3 +64,5 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(ContentModel(preview: true))
     }
 }
+
+

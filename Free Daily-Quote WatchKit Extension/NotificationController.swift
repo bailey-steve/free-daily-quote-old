@@ -21,11 +21,13 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        print("XXXX willActivate")
         super.willActivate()
     }
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        print("YYYY didDeactivate")
         super.didDeactivate()
     }
 
@@ -33,5 +35,6 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // This method is called when a notification needs to be presented.
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
+        print("ZZZZ didReceive")
     }
 }

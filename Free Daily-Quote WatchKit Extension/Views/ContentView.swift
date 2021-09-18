@@ -18,8 +18,16 @@ struct ContentView: View {
     
     var body: some View {
 
-        Text(model.quote)
-            .padding()
+        VStack{
+            Text(model.quote)
+                .padding()
+            Text(String(model.random))
+                .padding()
+        }.onAppear(perform: {
+            model.getQuote()
+        })
+
+
         
     }
 }

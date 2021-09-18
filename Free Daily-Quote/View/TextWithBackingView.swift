@@ -17,12 +17,13 @@ struct TextWithBackingView: View {
             ZStack{
                 RoundedRectangle(cornerRadius: 3)
                     .foregroundColor(.black.opacity(0.4))
+                    
                 Text(textValue)
                     .foregroundColor(.white)
                     .padding()
                     .multilineTextAlignment(.center)
+                    
             }
-            .fixedSize()
             Spacer()
         }
     }

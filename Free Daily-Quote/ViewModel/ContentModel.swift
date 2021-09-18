@@ -23,7 +23,12 @@ class ContentModel: ObservableObject {
     
     @Published var imageData: Data = Data()
     
+    @Published var random: Int = -1
+    
+
     init(preview:Bool = false) {
+        
+        
         
         if preview {
             
@@ -46,6 +51,9 @@ class ContentModel: ObservableObject {
         
         getQuote()
     }
+    
+
+    
     func getQuote(){
         
         var request = URLRequest(url: URL(string: "https://quotes.rest/qod")!);
@@ -83,15 +91,25 @@ class ContentModel: ObservableObject {
                     self.background = localQuote.background
                     self.title = localQuote.title
                     
+                    self.random = localQuote.random
+                    
                     self.getImageData()
                 }
                 print(self.quote)
+                
+
                 
             } catch {
                     print(error)
                 print("JSON Serialization error")
             }
         }).resume()
+    }
+    
+
+    
+    @objc func fireTimer() {
+        print("Timer fired!")
     }
     
     func getImageData() {
@@ -114,3 +132,4 @@ class ContentModel: ObservableObject {
         }
         
     }}
+

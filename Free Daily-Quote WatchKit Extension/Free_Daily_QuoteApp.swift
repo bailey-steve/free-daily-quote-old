@@ -9,15 +9,18 @@ import SwiftUI
 
 @main
 struct Free_Daily_QuoteApp: App {
+   
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
                 ContentView()
                     .environmentObject(ContentModel())
-                
             }
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }
+
+
+
