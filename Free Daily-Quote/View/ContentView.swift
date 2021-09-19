@@ -18,28 +18,77 @@ struct ContentView: View {
             let uiImage = UIImage(data: model.imageData)
             Image(uiImage: uiImage ?? UIImage())
                 .resizable()
+                .ignoresSafeArea()
+            
+            VStack(alignment: .center){
                 
-                VStack(alignment: .center){
-                    
+                HStack{
                     Spacer()
-                    
-                    TextWithBackingView(textValue: model.title)
-                        .font(.headline)
-
-                    //TextWithBackingView(textValue: String(model.random))
-                    Spacer()
-
-                    TextWithBackingView(textValue: model.quote)
-                        .font(.headline)
+                    Button(action: {
                         
-
+                        if let url = URL(string: "https://theysaidso.com") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        ZStack{
+                            Rectangle()
+                                .foregroundColor(.black)
+                            HStack{
+                                let uiImage = UIImage(data: model.theysaidsoImageData)
+                                Image(uiImage: uiImage ?? UIImage())
+                                    .resizable()
+                                    .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .padding(.leading, 5)
+                                Text("They Said So®")
+                                    .foregroundColor(.white)
+                                    .font(.custom("American Typewriter", size: 16, relativeTo: .headline))
+                                    
+                                Spacer()
+                            }
+                            
+                            
+                        }
+                        .fixedSize()
+                        
+                    }
+                }
+                
+                Spacer()
+                
+                TextWithBackingView(textValue: model.title)
+                    .font(.headline)
+                
+                //TextWithBackingView(textValue: String(model.random))
+                Spacer()
+                
+                TextWithBackingView(textValue: model.quote)
+                    .font(.headline)
+                
+                
+                Spacer()
+                
+                HStack{
                     Spacer()
-                    
-                    TextWithBackingView(textValue: "Author: \(model.author)")
+                    TextWithBackingView(textValue: "Author: \(model.author) ")
                         .font(.caption)
-
+                    
+                    Button(action: {
+                        
+                        if let url = URL(string: "https://theysaidso.com") {
+                            UIApplication.shared.open(url)
+                        }
+                    }) {
+                        TextWithBackingView(textValue: "(theysaidso.com)")
+                            //.foregroundColor(.white)
+                            //.font(.custom("American Typewriter", size: 16, relativeTo: .headline))
+                        
+                        
+                    }
                     Spacer()
+                }
 
+                Spacer()
+                
                 GADBannerViewController()
                     .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
             }
@@ -47,7 +96,7 @@ struct ContentView: View {
             
             
         }
-        .ignoresSafeArea()
+        //.ignoresSafeArea()
         .onReceive(NotificationCenter.default.publisher(for: UIApplication.willEnterForegroundNotification)) { _ in
             model.getQuote()
         }

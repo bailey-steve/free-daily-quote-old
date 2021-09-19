@@ -224,7 +224,6 @@
 				92F7C16E26F0B91900B8437B /* View */,
 				92F7C16D26F0B90700B8437B /* ViewModel */,
 				92F7C16C26F0B8FA00B8437B /* Model */,
-				92F7C16B26F0B8E900B8437B /* Constants */,
 				92F7C13426F0B78200B8437B /* Assets.xcassets */,
 				92F7C13926F0B78200B8437B /* Info.plist */,
 				92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */,
@@ -275,13 +274,6 @@
 				92F7C15A26F0B78300B8437B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		92F7C16B26F0B8E900B8437B /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Constants;
 			sourceTree = "<group>";
 		};
 		92F7C16C26F0B8FA00B8437B /* Model */ = {

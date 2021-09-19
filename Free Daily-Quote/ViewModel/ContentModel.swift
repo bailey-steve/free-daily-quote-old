@@ -23,6 +23,9 @@ class ContentModel: ObservableObject {
     
     @Published var imageData: Data = Data()
     
+    @Published var theysaidsoImageLocation : String = "https://theysaidso.com/branding/theysaidso.png"
+    @Published var theysaidsoImageData: Data = Data()
+    
     @Published var random: Int = -1
     
 
@@ -94,6 +97,7 @@ class ContentModel: ObservableObject {
                     self.random = localQuote.random
                     
                     self.getImageData()
+                    self.getTheySaidSoImageData()
                 }
                 print(self.quote)
                 
@@ -104,12 +108,6 @@ class ContentModel: ObservableObject {
                 print("JSON Serialization error")
             }
         }).resume()
-    }
-    
-
-    
-    @objc func fireTimer() {
-        print("Timer fired!")
     }
     
     func getImageData() {
@@ -131,5 +129,27 @@ class ContentModel: ObservableObject {
             dataTask.resume()
         }
         
-    }}
+    }
+    
+    func getTheySaidSoImageData() {
+
+        if let url = URL(string: theysaidsoImageLocation){
+            
+            // Get a session
+            let session = URLSession.shared
+            let dataTask = session.dataTask(with: url) { data, response, error in
+                if error == nil {
+                    
+                    DispatchQueue.main.async {
+                        // Set the image data
+                        self.theysaidsoImageData = data!
+                    }
+                }
+            }
+            dataTask.resume()
+        }
+        
+    }
+}
+
 

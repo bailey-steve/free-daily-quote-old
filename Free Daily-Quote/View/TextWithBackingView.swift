@@ -13,18 +13,20 @@ struct TextWithBackingView: View {
     
     var body: some View {
         HStack{
-            Spacer()
+            //Spacer()
             ZStack{
-                RoundedRectangle(cornerRadius: 3)
-                    .foregroundColor(.black.opacity(0.4))
+                //RoundedRectangle(cornerRadius: 3)
+                //    .foregroundColor(.black.opacity(0.4))
                     
                 Text(textValue)
                     .foregroundColor(.white)
-                    .padding()
+                    .bold()
+                    //.padding()
                     .multilineTextAlignment(.center)
+                    .font(.custom("American Typewriter", size: 16, relativeTo: .headline))
                     
             }
-            Spacer()
+            //Spacer()
         }
     }
 }
