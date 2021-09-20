@@ -24,32 +24,9 @@ struct ContentView: View {
                 
                 HStack{
                     Spacer()
-                    Button(action: {
-                        
-                        if let url = URL(string: "https://theysaidso.com") {
-                            UIApplication.shared.open(url)
-                        }
-                    }) {
-                        ZStack{
-                            Rectangle()
-                                .foregroundColor(.black)
-                            HStack{
-                                let uiImage = UIImage(data: model.theysaidsoImageData)
-                                Image(uiImage: uiImage ?? UIImage())
-                                    .resizable()
-                                    .frame(width: 40, height: 40, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                    .padding(.leading, 5)
-                                Text("They Said So®")
-                                    .foregroundColor(.white)
-                                    .font(.custom("American Typewriter", size: 16, relativeTo: .headline))
-                                    
-                                Spacer()
-                            }
-                            
-                            
-                        }
-                        .fixedSize()
-                        
+                    
+                    Link(destination: URL(string: "https://theysaidso.com")!) {
+                        TheySaidSoBannerView()
                     }
                 }
                 
@@ -72,21 +49,15 @@ struct ContentView: View {
                     TextWithBackingView(textValue: "Author: \(model.author) ")
                         .font(.caption)
                     
-                    Button(action: {
-                        
-                        if let url = URL(string: "https://theysaidso.com") {
-                            UIApplication.shared.open(url)
-                        }
-                    }) {
+                    
+                    Link(destination: URL(string: "https://theysaidso.com")!) {
                         TextWithBackingView(textValue: "(theysaidso.com)")
-                            //.foregroundColor(.white)
-                            //.font(.custom("American Typewriter", size: 16, relativeTo: .headline))
-                        
-                        
                     }
                     Spacer()
                 }
-
+                
+                
+                
                 Spacer()
                 
                 GADBannerViewController()
