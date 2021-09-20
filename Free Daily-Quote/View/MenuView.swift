@@ -13,16 +13,8 @@ struct MenuView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-
-            Button(action: {
-                withAnimation{
-                    self.showMenu = false
-                    
-                }
-            }) {
-                Image(systemName: "line.horizontal.3")
-            }
             
+            Spacer()
             HStack {
                 Image(systemName: "bell")
                 Text("Notification")
@@ -44,11 +36,13 @@ struct MenuView: View {
                 }
             }
             .padding(.top, 20)
-            
+            Spacer()
             Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(red: 32/255, green: 32/255, blue: 32/255))
+        .edgesIgnoringSafeArea(.all)
         .imageScale(.large)
         .foregroundColor(.white)
         .font(.custom("American Typewriter", size: 16, relativeTo: .headline))

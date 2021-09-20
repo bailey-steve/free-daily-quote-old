@@ -52,6 +52,7 @@
 		95DF5ACA26F3EA47007F0CAC /* TextWithBackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */; };
 		95DF5ACC26F8AD6C007F0CAC /* TheySaidSoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */; };
 		95DF5ACE26F8B2D3007F0CAC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */; };
+		95DF5AD026F914A0007F0CAC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACF26F914A0007F0CAC /* MainView.swift */; };
 		96BB33CE685DA00E0D487012 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121CE39CC87ECEABEF071116 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework */; };
 		B592188E53F096C0538ED7AA /* Pods_Free_Daily_Quote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */; };
 /* End PBXBuildFile section */
@@ -143,6 +144,7 @@
 		95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithBackingView.swift; sourceTree = "<group>"; };
 		95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheySaidSoBannerView.swift; sourceTree = "<group>"; };
 		95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		95DF5ACF26F914A0007F0CAC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free_Daily_Quote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1432DF0EC71DC73AFDDCC0C /* Pods-Free Daily-Quote WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit App/Pods-Free Daily-Quote WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 		EF4DEA36C32F562C32B31333 /* Pods-Free Daily-Quote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote/Pods-Free Daily-Quote.release.xcconfig"; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 				95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */,
 				95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */,
 				95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */,
+				95DF5ACF26F914A0007F0CAC /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				9262AE6D26F2236A00A5495A /* Banner.swift in Sources */,
 				92F7C18026F0BBF900B8437B /* ContentModel.swift in Sources */,
 				92F7C17126F0B98100B8437B /* Contents.swift in Sources */,
+				95DF5AD026F914A0007F0CAC /* MainView.swift in Sources */,
 				92F7C19026F0C07000B8437B /* Success.swift in Sources */,
 				92F7C19726F0C0B900B8437B /* ContentModel.swift in Sources */,
 				92F7C19226F0C07000B8437B /* Json4Swift_Base.swift in Sources */,

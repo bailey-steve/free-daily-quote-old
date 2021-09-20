@@ -13,9 +13,7 @@ struct ContentView: View {
     @State var showMenu = false
     
     var body: some View {
-        
-        
-        
+
         ZStack()
         {
             let uiImage = UIImage(data: model.imageData)
@@ -33,7 +31,7 @@ struct ContentView: View {
                             }
                         }
                     }
-
+                
                 GeometryReader { geometry in
                     ZStack(alignment: .leading) {
                         MainView(showMenu: self.$showMenu)
@@ -70,65 +68,3 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(ContentModel(preview: true))
     }
 }
-
-
-
-struct MainView: View {
-    
-    @EnvironmentObject var model: ContentModel
-    @Binding var showMenu: Bool
-    
-    var body: some View {
-        VStack{
-            HStack{
-                
-                Button(action: {
-                    withAnimation{
-                        self.showMenu = true
-                        
-                    }
-                }) {
-                    if self.showMenu == false
-                    {
-                    Image(systemName: "line.horizontal.3")
-                        .imageScale(.large)
-                        .foregroundColor(.white)
-                    }
-                }
-                
-                Spacer()
-                
-                Link(destination: URL(string: "https://theysaidso.com")!) {
-                    TheySaidSoBannerView()
-                }
-            }
-            
-            Spacer()
-            
-            TextWithBackingView(textValue: model.title)
-                .font(.headline)
-            
-            Spacer()
-            
-            TextWithBackingView(textValue: model.quote)
-                .font(.headline)
-            
-            Spacer()
-            
-            HStack{
-                Spacer()
-                TextWithBackingView(textValue: "Author: \(model.author) ")
-                    .font(.caption)
-                
-                Link(destination: URL(string: "https://theysaidso.com")!) {
-                    TextWithBackingView(textValue: "(theysaidso.com)")
-                }
-                Spacer()
-            }
-            
-            Spacer()
-        }
-        
-    }
-}
-
