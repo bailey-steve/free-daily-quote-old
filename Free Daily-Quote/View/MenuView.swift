@@ -13,7 +13,7 @@ struct MenuView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            
+
             Button(action: {
                 withAnimation{
                     self.showMenu = false
@@ -21,43 +21,37 @@ struct MenuView: View {
                 }
             }) {
                 Image(systemName: "line.horizontal.3")
-                    .imageScale(.large)
-                    .foregroundColor(.white)
             }
+            
+            HStack {
+                Image(systemName: "bell")
+                Text("Notification")
+            }
+            .padding(.top, 20)
 
-            HStack {
-                Image(systemName: "person")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Profile")
-                    .foregroundColor(.gray)
-                    .font(.headline)
+            Link(destination: URL(string: "https://salmtcat.wordpress.com/free-daily-quotes-privacy-policy/")!) {
+                HStack {
+                    Image(systemName: "lock")
+                    Text("Privacy")
+                }
             }
-            .padding(.top, 100)
-            HStack {
-                Image(systemName: "envelope")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Messages")
-                    .foregroundColor(.gray)
-                    .font(.headline)
+            .padding(.top, 20)
+            
+            Link(destination: URL(string: "https://salmtcat.wordpress.com/free-daily-quotes-terms-and-conditions/")!){
+                HStack {
+                    Image(systemName: "scroll")
+                    Text("Terms")
+                }
             }
-                .padding(.top, 30)
-            HStack {
-                Image(systemName: "gear")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Settings")
-                    .foregroundColor(.gray)
-                    .font(.headline)
-            }
-                .padding(.top, 30)
+            .padding(.top, 20)
+            
             Spacer()
         }
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(Color(red: 32/255, green: 32/255, blue: 32/255))
-        //.edgesIgnoringSafeArea(.all)
+        .imageScale(.large)
+        .foregroundColor(.white)
+        .font(.custom("American Typewriter", size: 16, relativeTo: .headline))
         
     }
 }
