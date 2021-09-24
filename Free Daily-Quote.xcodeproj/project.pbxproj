@@ -100,6 +100,16 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95278D9426FDFDB400E148FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +156,10 @@
 		92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95278D7A26FB9ECF00E148FE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		95278D7D26FDF73A00E148FE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		95278D8526FDFDB400E148FE /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		95278D8826FDFDB400E148FE /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
+		95278D8B26FDFDB400E148FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		95278D8D26FDFDB400E148FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithBackingView.swift; sourceTree = "<group>"; };
 		95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheySaidSoBannerView.swift; sourceTree = "<group>"; };
 		95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -202,6 +216,7 @@
 				9829D002BB1EEC1504BF5D04 /* Pods_Free_Daily_Quote.framework */,
 				10607D6523F6B0BF642A97B8 /* Pods_Free_Daily_Quote_WatchKit_App.framework */,
 				121CE39CC87ECEABEF071116 /* Pods_Free_Daily_Quote_WatchKit_Extension.framework */,
+				95278D8526FDFDB400E148FE /* AuthenticationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -212,6 +227,7 @@
 				92F7C12F26F0B78000B8437B /* Free Daily-Quote */,
 				92F7C14026F0B78200B8437B /* Free Daily-Quote WatchKit App */,
 				92F7C14C26F0B78300B8437B /* Free Daily-Quote WatchKit Extension */,
+				95278D8726FDFDB400E148FE /* Free Daily Quote */,
 				92F7C12E26F0B78000B8437B /* Products */,
 				0CA1E6031D8C455737E7FDE0 /* Pods */,
 				92DA9BC681BE134D41E4B853 /* Frameworks */,
@@ -231,11 +247,11 @@
 		92F7C12F26F0B78000B8437B /* Free Daily-Quote */ = {
 			isa = PBXGroup;
 			children = (
-				95278D7C26FDF71C00E148FE /* Helpers */,
 				92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */,
 				92F7C16E26F0B91900B8437B /* View */,
 				92F7C16D26F0B90700B8437B /* ViewModel */,
 				92F7C16C26F0B8FA00B8437B /* Model */,
+				95278D7C26FDF71C00E148FE /* Helpers */,
 				92F7C13426F0B78200B8437B /* Assets.xcassets */,
 				92F7C13926F0B78200B8437B /* Info.plist */,
 				92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */,
@@ -367,6 +383,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		95278D8726FDFDB400E148FE /* Free Daily Quote */ = {
+			isa = PBXGroup;
+			children = (
+				95278D8826FDFDB400E148FE /* AccountAuthenticationModificationViewController.swift */,
+				95278D8A26FDFDB400E148FE /* MainInterface.storyboard */,
+				95278D8D26FDFDB400E148FE /* Info.plist */,
+			);
+			path = "Free Daily Quote";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -380,6 +406,7 @@
 				92F7C12B26F0B78000B8437B /* Resources */,
 				92F7C16726F0B78300B8437B /* Embed Watch Content */,
 				354D6B68FD98487432E6FF6D /* [CP] Embed Pods Frameworks */,
+				95278D9426FDFDB400E148FE /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -434,7 +461,7 @@
 		92F7C12526F0B78000B8437B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					92F7C12C26F0B78000B8437B = {
@@ -655,6 +682,17 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		95278D8A26FDFDB400E148FE /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95278D8B26FDFDB400E148FE /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		92F7C15E26F0B78300B8437B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -774,7 +812,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Free Daily-Quote WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = TFU4NT5A6T;
+				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -799,7 +837,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Free Daily-Quote WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = TFU4NT5A6T;
+				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -827,7 +865,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TFU4NT5A6T;
+				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				IBSC_MODULE = Free_Daily_Quote_WatchKit_Extension;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -856,7 +894,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TFU4NT5A6T;
+				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				IBSC_MODULE = Free_Daily_Quote_WatchKit_Extension;
 				INFOPLIST_FILE = "Free Daily-Quote WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -880,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 397696FAAA972B9853E1D5B6 /* Pods-Free Daily-Quote.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -904,6 +943,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF4DEA36C32F562C32B31333 /* Pods-Free Daily-Quote.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

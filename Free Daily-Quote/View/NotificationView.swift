@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 
 struct NotificationView: View {
@@ -34,18 +35,46 @@ struct NotificationView: View {
                 
             
         }
-                       
-            
-            Button {
-                
-                //self.showSchedule = false
-                print("CURRENT DATE \($currentDate)")
-                
-            } label: {
-                TextWithBackingView(textValue: "Confirm")
-                
+           
+            VStack {
+                Button("Schedule Notification") {
+                    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                        if success {
+                            
+                            let content = UNMutableNotificationContent()
+                            content.title = "Daily Quote"
+                            content.subtitle = "Your daily quote is available."
+                            content.sound = UNNotificationSound.default
+                            
+                            let components = Calendar.current.dateComponents([.hour, .minute], from: currentDate)
+                            print(components)
+                            
+                            let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
+
+                            // choose a random identifier
+                            let request = UNNotificationRequest(identifier: "Quote1234", content: content, trigger: trigger)
+
+                            // add our notification request
+                            UNUserNotificationCenter.current().add(request)
+                            
+                            
+                        } else if let error = error {
+                            print(error.localizedDescription)
+                        }
+                    }
+                }
             }
+        
             
+        /*
+        Button {
+            self.showSchedule = false
+            print("CURRENT DATE \($currentDate)")
+                
+        } label: {
+            TextWithBackingView(textValue: "Confirm")
+        }
+        */
         Spacer()
         }
     }
