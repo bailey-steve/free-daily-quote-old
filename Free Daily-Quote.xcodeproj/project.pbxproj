@@ -49,6 +49,9 @@
 		92F7C19826F0C0B900B8437B /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C19626F0C0B800B8437B /* ContentModel.swift */; };
 		92F7C19A26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */; };
 		92F7C19B26F0CE4D00B8437B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */; };
+		95278D7B26FB9ECF00E148FE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7A26FB9ECF00E148FE /* NotificationView.swift */; };
+		95278D7E26FDF73A00E148FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7D26FDF73A00E148FE /* Helper.swift */; };
+		95278D7F26FDF73A00E148FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7D26FDF73A00E148FE /* Helper.swift */; };
 		95DF5ACA26F3EA47007F0CAC /* TextWithBackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */; };
 		95DF5ACC26F8AD6C007F0CAC /* TheySaidSoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */; };
 		95DF5ACE26F8B2D3007F0CAC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */; };
@@ -141,6 +144,8 @@
 		92F7C18B26F0C07000B8437B /* Free Daily-Quote WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Free Daily-Quote WatchKit App-Bridging-Header.h"; path = "Free Daily-Quote/Model/Free Daily-Quote WatchKit App-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		92F7C19626F0C0B800B8437B /* ContentModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentModel.swift; path = "Free Daily-Quote/ViewModel/ContentModel.swift"; sourceTree = SOURCE_ROOT; };
 		92F7C19926F0CE4D00B8437B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95278D7A26FB9ECF00E148FE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		95278D7D26FDF73A00E148FE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithBackingView.swift; sourceTree = "<group>"; };
 		95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheySaidSoBannerView.swift; sourceTree = "<group>"; };
 		95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -226,6 +231,7 @@
 		92F7C12F26F0B78000B8437B /* Free Daily-Quote */ = {
 			isa = PBXGroup;
 			children = (
+				95278D7C26FDF71C00E148FE /* Helpers */,
 				92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */,
 				92F7C16E26F0B91900B8437B /* View */,
 				92F7C16D26F0B90700B8437B /* ViewModel */,
@@ -312,6 +318,7 @@
 				95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */,
 				95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */,
 				95DF5ACF26F914A0007F0CAC /* MainView.swift */,
+				95278D7A26FB9ECF00E148FE /* NotificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +357,14 @@
 			children = (
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		95278D7C26FDF71C00E148FE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95278D7D26FDF73A00E148FE /* Helper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -584,6 +599,7 @@
 				95DF5AD026F914A0007F0CAC /* MainView.swift in Sources */,
 				92F7C19026F0C07000B8437B /* Success.swift in Sources */,
 				92F7C19726F0C0B900B8437B /* ContentModel.swift in Sources */,
+				95278D7E26FDF73A00E148FE /* Helper.swift in Sources */,
 				92F7C19226F0C07000B8437B /* Json4Swift_Base.swift in Sources */,
 				92F7C19426F0C07000B8437B /* Copyright.swift in Sources */,
 				92F7C17A26F0BBCD00B8437B /* Quotes.swift in Sources */,
@@ -595,6 +611,7 @@
 				92F7C18C26F0C07000B8437B /* Quotes.swift in Sources */,
 				95DF5ACC26F8AD6C007F0CAC /* TheySaidSoBannerView.swift in Sources */,
 				95DF5ACA26F3EA47007F0CAC /* TextWithBackingView.swift in Sources */,
+				95278D7B26FB9ECF00E148FE /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +624,7 @@
 				92F7C15026F0B78300B8437B /* ContentView.swift in Sources */,
 				92F7C19526F0C07000B8437B /* Copyright.swift in Sources */,
 				92F7C17E26F0BBDA00B8437B /* Success.swift in Sources */,
+				95278D7F26FDF73A00E148FE /* Helper.swift in Sources */,
 				92F7C15626F0B78300B8437B /* ComplicationController.swift in Sources */,
 				92F7C17526F0B99900B8437B /* Copyright.swift in Sources */,
 				92F7C17826F0BBBB00B8437B /* Json4Swift_Base.swift in Sources */,

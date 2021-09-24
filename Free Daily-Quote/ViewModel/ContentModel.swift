@@ -27,11 +27,8 @@ class ContentModel: ObservableObject {
     @Published var theysaidsoImageData: Data = Data()
     
     @Published var random: Int = -1
-    
 
     init(preview:Bool = false) {
-        
-        
         
         if preview {
             
