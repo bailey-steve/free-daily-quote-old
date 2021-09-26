@@ -12,11 +12,9 @@ import UserNotifications
 struct NotificationView: View {
     
     @Binding var showSchedule: Bool
-
     
     @State var currentDate: Date = defaultDate()
 
-    
     var body: some View {
         VStack{
         
@@ -28,7 +26,7 @@ struct NotificationView: View {
         {
   
             DatePicker("", selection: $currentDate, displayedComponents: .hourAndMinute)
-                .colorInvert()
+                //.colorInvert()
                 .datePickerStyle(WheelDatePickerStyle())
                 .labelsHidden()
                 
@@ -37,7 +35,7 @@ struct NotificationView: View {
         }
            
             VStack {
-                Button("Schedule Notification") {
+                Button {
                     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
                         if success {
                             
@@ -57,11 +55,15 @@ struct NotificationView: View {
                             // add our notification request
                             UNUserNotificationCenter.current().add(request)
                             
+                            showSchedule = false
+                            
                             
                         } else if let error = error {
                             print(error.localizedDescription)
                         }
                     }
+                } label: {
+                    TextWithBackingView(textValue: "Schedule Notification")
                 }
             }
         

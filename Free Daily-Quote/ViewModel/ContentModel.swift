@@ -44,7 +44,7 @@ class ContentModel: ObservableObject {
             self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
             self.title =  "Quote"
             
-            self.getImageData()
+            //self.getImageData()
             
             return
         }
@@ -93,7 +93,7 @@ class ContentModel: ObservableObject {
                     
                     self.random = localQuote.random
                     
-                    self.getImageData()
+                    //self.getImageData()
                     self.getTheySaidSoImageData()
                 }
                 print(self.quote)

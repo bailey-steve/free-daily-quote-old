@@ -15,7 +15,7 @@ struct TextWithBackingView: View {
         HStack{
             ZStack{
                 Text(textValue)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .bold()
                     .multilineTextAlignment(.center)
                     .font(.title2)

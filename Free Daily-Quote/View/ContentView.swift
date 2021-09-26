@@ -19,8 +19,9 @@ struct ContentView: View {
         
         ZStack()
         {
-            let uiImage = UIImage(data: model.imageData)
-            Image(uiImage: uiImage ?? UIImage())
+            //let uiImage = UIImage(data: model.imageData)
+            //Image(uiImage: uiImage ?? UIImage())
+            Image("road")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
@@ -53,7 +54,7 @@ struct ContentView: View {
                                     .offset(x: self.showMenu ? geometry.size.width/2 : 0)
                                     .disabled(self.showMenu ? true : false)
                                 if self.showMenu {
-                                    MenuView(showMenu: self.$showMenu)
+                                    MenuView(showMenu: self.$showMenu, showSchedule: self.$showSchedule)
                                         .frame(width: geometry.size.width/2)
                                         .transition(.move(edge: .leading))
                                     

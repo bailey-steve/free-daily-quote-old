@@ -10,14 +10,21 @@ import SwiftUI
 struct MenuView: View {
     
     @Binding var showMenu: Bool
+    @Binding var showSchedule: Bool
     
     var body: some View {
         VStack(alignment: .leading) {
             
             Spacer()
             HStack {
+                Button{
+                    showMenu = false
+                    showSchedule = true
+                    
+                } label: {
                 Image(systemName: "bell")
                 Text("Notification")
+                }
             }
             .padding(.top, 20)
 
@@ -45,7 +52,7 @@ struct MenuView: View {
         .edgesIgnoringSafeArea(.all)
         .imageScale(.large)
         .foregroundColor(.white)
-        .font(.custom("American Typewriter", size: 16, relativeTo: .headline))
+        //.font(.custom("American Typewriter", size: 16, relativeTo: .headline))
         
     }
 }
