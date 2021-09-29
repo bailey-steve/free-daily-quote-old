@@ -24,9 +24,9 @@ struct ContentView: View {
             Image("road")
                 .resizable()
                 .scaledToFill()
-                .ignoresSafeArea()
-                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
-                
+                //.ignoresSafeArea()
+                .frame(width: UIScreen.main.bounds.width) //, height: UIScreen.main.bounds.height)
+                .clipped()
             
             VStack{
                 Spacer()

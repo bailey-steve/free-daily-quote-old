@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MenuView: View {
     
+    @EnvironmentObject var model: ContentModel
+    
     @Binding var showMenu: Bool
     @Binding var showSchedule: Bool
     

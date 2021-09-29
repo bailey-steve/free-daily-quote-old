@@ -6,7 +6,9 @@
 //
 
 import Foundation
+import UserNotifications
 
+@MainActor
 class ContentModel: ObservableObject {
     
     @Published var  quote : String = "Fetching Quote"
@@ -27,9 +29,31 @@ class ContentModel: ObservableObject {
     @Published var theysaidsoImageData: Data = Data()
     
     @Published var random: Int = -1
-
+    
+    @Published var notificationSetting: UNAuthorizationStatus = .notDetermined
+    
     init(preview:Bool = false) {
-        
+
+        // Are we allowed to send the user notifications?
+        UNUserNotificationCenter.current().getNotificationSettings { [self] s in
+            notificationSetting = s.authorizationStatus
+            
+            switch notificationSetting {
+            case .notDetermined:
+                print("NOTIF: notDetermined")
+            case .denied:
+                print("NOTIF: denied")
+            case .authorized:
+                print("NOTIF: authorized")
+            case .ephemeral:
+                print("NOTIF: ephemeral")
+            case .provisional:
+                print("NOTIF: provisional")
+            default:
+                print("NOTIF: Default")
+            }
+        }
+                
         if preview {
             
             self.quote = "Live as if you were to die tomorrow. Learn as if you were to live forever."
@@ -147,6 +171,8 @@ class ContentModel: ObservableObject {
         }
         
     }
+    
+
 }
 
 

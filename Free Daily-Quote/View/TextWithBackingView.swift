@@ -19,7 +19,8 @@ struct TextWithBackingView: View {
                     .bold()
                     .multilineTextAlignment(.center)
                     .font(.title2)
-                    //.font(.custom("American Typewriter", size: 16, relativeTo: .headline))
+                    .background(Color.white.opacity(0.3))
+                    .cornerRadius(5)
                     
             }
         }

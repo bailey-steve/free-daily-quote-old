@@ -52,6 +52,7 @@
 		95278D7B26FB9ECF00E148FE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7A26FB9ECF00E148FE /* NotificationView.swift */; };
 		95278D7E26FDF73A00E148FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7D26FDF73A00E148FE /* Helper.swift */; };
 		95278D7F26FDF73A00E148FE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95278D7D26FDF73A00E148FE /* Helper.swift */; };
+		95D06690270238EA007E8A91 /* NotificationAllowedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D0668F270238EA007E8A91 /* NotificationAllowedView.swift */; };
 		95DF5ACA26F3EA47007F0CAC /* TextWithBackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */; };
 		95DF5ACC26F8AD6C007F0CAC /* TheySaidSoBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */; };
 		95DF5ACE26F8B2D3007F0CAC /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */; };
@@ -160,6 +161,7 @@
 		95278D8826FDFDB400E148FE /* AccountAuthenticationModificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAuthenticationModificationViewController.swift; sourceTree = "<group>"; };
 		95278D8B26FDFDB400E148FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		95278D8D26FDFDB400E148FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95D0668F270238EA007E8A91 /* NotificationAllowedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAllowedView.swift; sourceTree = "<group>"; };
 		95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithBackingView.swift; sourceTree = "<group>"; };
 		95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheySaidSoBannerView.swift; sourceTree = "<group>"; };
 		95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
@@ -328,13 +330,13 @@
 		92F7C16E26F0B91900B8437B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				95D0668E270238BE007E8A91 /* Notifications */,
 				92F7C13226F0B78000B8437B /* ContentView.swift */,
 				9262AE6C26F2236A00A5495A /* Banner.swift */,
 				95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */,
 				95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */,
 				95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */,
 				95DF5ACF26F914A0007F0CAC /* MainView.swift */,
-				95278D7A26FB9ECF00E148FE /* NotificationView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -391,6 +393,15 @@
 				95278D8D26FDFDB400E148FE /* Info.plist */,
 			);
 			path = "Free Daily Quote";
+			sourceTree = "<group>";
+		};
+		95D0668E270238BE007E8A91 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				95278D7A26FB9ECF00E148FE /* NotificationView.swift */,
+				95D0668F270238EA007E8A91 /* NotificationAllowedView.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -636,6 +647,7 @@
 				95DF5ACE26F8B2D3007F0CAC /* MenuView.swift in Sources */,
 				92F7C17426F0B99900B8437B /* Copyright.swift in Sources */,
 				92F7C18C26F0C07000B8437B /* Quotes.swift in Sources */,
+				95D06690270238EA007E8A91 /* NotificationAllowedView.swift in Sources */,
 				95DF5ACC26F8AD6C007F0CAC /* TheySaidSoBannerView.swift in Sources */,
 				95DF5ACA26F3EA47007F0CAC /* TextWithBackingView.swift in Sources */,
 				95278D7B26FB9ECF00E148FE /* NotificationView.swift in Sources */,
@@ -927,7 +939,7 @@
 				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Free Daily-Quote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -953,7 +965,7 @@
 				DEVELOPMENT_TEAM = 5F8GBUBLR5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Free Daily-Quote/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
