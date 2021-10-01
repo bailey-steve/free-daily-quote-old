@@ -75,9 +75,18 @@ class ContentModel: ObservableObject {
     func updateNotificationStatus(){
         // Are we allowed to send the user notifications?
         UNUserNotificationCenter.current().getNotificationSettings { [self] s in
-            notificationSetting = s.authorizationStatus
             
+            DispatchQueue.main.async {
+                notificationSetting = s.authorizationStatus
+            }
         }
+        
+        
+    }
+    
+    func recieveNotificationStatus()
+    {
+        
     }
     
     func getQuote(){
@@ -119,7 +128,7 @@ class ContentModel: ObservableObject {
                     self.getTheySaidSoImageData()
                 }
                 print(self.quote)
-
+                
             } catch {
                 print(error)
                 print("JSON Serialization error")
