@@ -34,3 +34,13 @@ struct TheySaidSoBannerView: View {
     }
 }
 
+struct TheySaidSoBannerView_Previews: PreviewProvider {
+    
+    @StateObject static var model = ContentModel(preview: true)
+    
+    static var previews: some View {
+        TheySaidSoBannerView()
+            .environmentObject(model)
+            
+    }
+}

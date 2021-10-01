@@ -30,6 +30,5 @@ struct TextWithBackingView: View {
 struct TextWithBackingView_Previews: PreviewProvider {
     static var previews: some View {
         TextWithBackingView(textValue: "Test value")
-            
     }
 }

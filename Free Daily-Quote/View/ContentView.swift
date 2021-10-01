@@ -10,17 +10,15 @@ import GoogleMobileAds
 struct ContentView: View {
     @EnvironmentObject var model: ContentModel
     
+    // TODO: Replace these with a phase and screen selection
     @State var showMenu = false
-    
-    @State var showSchedule = true
-    
+    @State var showSchedule = false
+    @State var skipSchedule = false // the user has skipped the schedule
 
     var body: some View {
         
         ZStack()
         {
-            //let uiImage = UIImage(data: model.imageData)
-            //Image(uiImage: uiImage ?? UIImage())
             Image("road")
                 .resizable()
                 .scaledToFill()
@@ -30,7 +28,8 @@ struct ContentView: View {
             
             VStack{
                 Spacer()
-                if self.showSchedule {
+
+                if self.showSchedule && !self.skipSchedule  {
                     
                     NotificationView( showSchedule: $showSchedule)
                     
@@ -75,3 +74,17 @@ struct ContentView: View {
     }
 }
 
+struct ContentView_Previews: PreviewProvider {
+    
+    @EnvironmentObject var model: ContentModel
+
+    @State static var showMenu = false
+    @State static var showSchedule = false
+    @State static var skipSchedule = false
+    
+    static var previews: some View {
+        
+        ContentView(showMenu: showMenu, showSchedule: showSchedule, skipSchedule: skipSchedule)
+            .environmentObject(ContentModel(preview: true))
+    }
+}

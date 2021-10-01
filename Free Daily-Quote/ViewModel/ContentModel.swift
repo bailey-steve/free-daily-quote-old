@@ -30,53 +30,56 @@ class ContentModel: ObservableObject {
     
     @Published var random: Int = -1
     
+    // Schedule Notification
+    // On inital load
+    //  No schedule set up and not disabled - Show schedule notification otherwise main screen
+    //
+    // From menu
+    //  If not disabled - show notification
+    //  if disabled - show change system settings
     @Published var notificationSetting: UNAuthorizationStatus = .notDetermined
+
     
     init(preview:Bool = false) {
+        // Are we looking at live or previw
+        if preview {
+            // Preview - show fake data
+            notificationSetting = .notDetermined
+            getPreview()
+        } else {
+            // Live - get real data from server
+            updateNotificationStatus()
+            getQuote()
+        }
 
+    }
+    
+    func getPreview() {
+        self.quote = "Live as if you were to die tomorrow. Learn as if you were to live forever."
+        self.length = "1"
+        self.author =  "Mahatma Gandhi"
+        self.tags = ["None"]
+        self.category = "General"
+        self.language = "en"
+        self.date = "01/01/2022"
+        self.permalink = "https://theysaidso.com/quote/japanese-proverb-vision-without-action-is-daydream-action-without-vision-is-nigh"
+        self.id = "12345"
+        self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
+        self.title =  "Quote"
+        self.theysaidsoImageLocation = "https://theysaidso.com/branding/theysaidso.png"
+        self.theysaidsoImageData = Data()
+        self.getTheySaidSoImageData()
+        return
+        
+    }
+    
+    func updateNotificationStatus(){
         // Are we allowed to send the user notifications?
         UNUserNotificationCenter.current().getNotificationSettings { [self] s in
             notificationSetting = s.authorizationStatus
             
-            switch notificationSetting {
-            case .notDetermined:
-                print("NOTIF: notDetermined")
-            case .denied:
-                print("NOTIF: denied")
-            case .authorized:
-                print("NOTIF: authorized")
-            case .ephemeral:
-                print("NOTIF: ephemeral")
-            case .provisional:
-                print("NOTIF: provisional")
-            default:
-                print("NOTIF: Default")
-            }
-        }
-                
-        if preview {
-            
-            self.quote = "Live as if you were to die tomorrow. Learn as if you were to live forever."
-            self.length = "1"
-            self.author =  "Mahatma Gandhi"
-            self.tags = ["None"]
-            self.category = "General"
-            self.language = "en"
-            self.date = "01/01/2022"
-            self.permalink = "https://theysaidso.com/quote/japanese-proverb-vision-without-action-is-daydream-action-without-vision-is-nigh"
-            self.id = "12345"
-            self.background =  "https://theysaidso.com/img/bgs/man_on_the_mountain.jpg"
-            self.title =  "Quote"
-            
-            //self.getImageData()
-            
-            return
-        }
-        
-        getQuote()
     }
-    
-
+    }
     
     func getQuote(){
         
@@ -171,8 +174,6 @@ class ContentModel: ObservableObject {
         }
         
     }
-    
-
 }
 
 

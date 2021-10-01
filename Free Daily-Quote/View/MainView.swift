@@ -64,3 +64,15 @@ struct MainView: View {
     }
 }
 
+struct MainView_Previews: PreviewProvider {
+    
+    @StateObject static var model = ContentModel(preview: true)
+    @State static var showMenu = false
+    
+    static var previews: some View {
+        MainView(showMenu: $showMenu)
+            .environmentObject(model)
+            
+    }
+}
+

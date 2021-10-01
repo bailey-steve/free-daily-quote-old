@@ -58,3 +58,16 @@ struct MenuView: View {
         
     }
 }
+
+struct MenuView_Previews: PreviewProvider {
+    
+    @StateObject static var model = ContentModel(preview: true)
+    @State static var showMenu = true
+    @State static var showSchedule = false
+    
+    static var previews: some View {
+        MenuView(showMenu: $showMenu, showSchedule: $showSchedule)
+            .environmentObject(model)
+            
+    }
+}
