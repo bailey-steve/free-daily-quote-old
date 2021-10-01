@@ -28,7 +28,9 @@ class ContentModel: ObservableObject {
     @Published var theysaidsoImageLocation : String = "https://theysaidso.com/branding/theysaidso.png"
     @Published var theysaidsoImageData: Data = Data()
     
-    @Published var random: Int = -1
+    // Which screen to show
+    @Published var showSchedule: Bool = true
+    @Published var showMenu: Bool = false
     
     // Schedule Notification
     // On inital load
@@ -38,7 +40,6 @@ class ContentModel: ObservableObject {
     //  If not disabled - show notification
     //  if disabled - show change system settings
     @Published var notificationSetting: UNAuthorizationStatus = .notDetermined
-
     
     init(preview:Bool = false) {
         // Are we looking at live or previw
@@ -51,7 +52,7 @@ class ContentModel: ObservableObject {
             updateNotificationStatus()
             getQuote()
         }
-
+        
     }
     
     func getPreview() {
@@ -69,8 +70,6 @@ class ContentModel: ObservableObject {
         self.theysaidsoImageLocation = "https://theysaidso.com/branding/theysaidso.png"
         self.theysaidsoImageData = Data()
         self.getTheySaidSoImageData()
-        return
-        
     }
     
     func updateNotificationStatus(){
@@ -78,7 +77,7 @@ class ContentModel: ObservableObject {
         UNUserNotificationCenter.current().getNotificationSettings { [self] s in
             notificationSetting = s.authorizationStatus
             
-    }
+        }
     }
     
     func getQuote(){
@@ -102,8 +101,7 @@ class ContentModel: ObservableObject {
                 
                 let jsonDecoder = JSONDecoder()
                 let responseModel = try jsonDecoder.decode(Json4Swift_Base.self, from: data!)
-                //print(responseModel)
-
+                
                 let localQuote = responseModel.contents!.quotes![0]
                 DispatchQueue.main.async {
                     self.quote = localQuote.quote
@@ -118,17 +116,12 @@ class ContentModel: ObservableObject {
                     self.background = localQuote.background
                     self.title = localQuote.title
                     
-                    self.random = localQuote.random
-                    
-                    //self.getImageData()
                     self.getTheySaidSoImageData()
                 }
                 print(self.quote)
-                
 
-                
             } catch {
-                    print(error)
+                print(error)
                 print("JSON Serialization error")
             }
         }).resume()
@@ -152,11 +145,10 @@ class ContentModel: ObservableObject {
             }
             dataTask.resume()
         }
-        
     }
     
     func getTheySaidSoImageData() {
-
+        
         if let url = URL(string: theysaidsoImageLocation){
             
             // Get a session
@@ -172,7 +164,6 @@ class ContentModel: ObservableObject {
             }
             dataTask.resume()
         }
-        
     }
 }
 

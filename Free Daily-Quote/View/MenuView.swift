@@ -10,18 +10,15 @@ import SwiftUI
 struct MenuView: View {
     
     @EnvironmentObject var model: ContentModel
-    
-    @Binding var showMenu: Bool
-    @Binding var showSchedule: Bool
-    
+
     var body: some View {
         VStack(alignment: .leading) {
             
             Spacer()
             HStack {
                 Button{
-                    showMenu = false
-                    showSchedule = true
+                    model.showMenu = false
+                    model.showSchedule = true
                     
                 } label: {
                 Image(systemName: "bell")
@@ -62,11 +59,9 @@ struct MenuView: View {
 struct MenuView_Previews: PreviewProvider {
     
     @StateObject static var model = ContentModel(preview: true)
-    @State static var showMenu = true
-    @State static var showSchedule = false
-    
+
     static var previews: some View {
-        MenuView(showMenu: $showMenu, showSchedule: $showSchedule)
+        MenuView()
             .environmentObject(model)
             
     }

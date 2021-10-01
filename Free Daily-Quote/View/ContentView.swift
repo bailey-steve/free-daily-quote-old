@@ -9,11 +9,6 @@ import GoogleMobileAds
 
 struct ContentView: View {
     @EnvironmentObject var model: ContentModel
-    
-    // TODO: Replace these with a phase and screen selection
-    @State var showMenu = false
-    @State var showSchedule = false
-    @State var skipSchedule = false // the user has skipped the schedule
 
     var body: some View {
         
@@ -22,16 +17,15 @@ struct ContentView: View {
             Image("road")
                 .resizable()
                 .scaledToFill()
-                //.ignoresSafeArea()
                 .frame(width: UIScreen.main.bounds.width) //, height: UIScreen.main.bounds.height)
                 .clipped()
             
             VStack{
                 Spacer()
 
-                if self.showSchedule && !self.skipSchedule  {
+                if model.showSchedule  {
                     
-                    NotificationView( showSchedule: $showSchedule)
+                    NotificationView()
                     
                 }
                 else {
@@ -41,19 +35,19 @@ struct ContentView: View {
                             .onEnded {
                                 if $0.translation.width < -100 {
                                     withAnimation {
-                                        self.showMenu = false
+                                        model.showMenu = false
                                     }
                                 }
                             }
                         
                         GeometryReader { geometry in
                             ZStack(alignment: .leading) {
-                                MainView(showMenu: self.$showMenu)
+                                MainView()
                                     .frame(width: geometry.size.width, height: geometry.size.height)
-                                    .offset(x: self.showMenu ? geometry.size.width/2 : 0)
-                                    .disabled(self.showMenu ? true : false)
-                                if self.showMenu {
-                                    MenuView(showMenu: self.$showMenu, showSchedule: self.$showSchedule)
+                                    .offset(x: model.showMenu ? geometry.size.width/2 : 0)
+                                    .disabled(model.showMenu ? true : false)
+                                if model.showMenu {
+                                    MenuView()
                                         .frame(width: geometry.size.width/2)
                                         .transition(.move(edge: .leading))
                                     
@@ -78,13 +72,8 @@ struct ContentView_Previews: PreviewProvider {
     
     @EnvironmentObject var model: ContentModel
 
-    @State static var showMenu = false
-    @State static var showSchedule = false
-    @State static var skipSchedule = false
-    
     static var previews: some View {
-        
-        ContentView(showMenu: showMenu, showSchedule: showSchedule, skipSchedule: skipSchedule)
+        ContentView()
             .environmentObject(ContentModel(preview: true))
     }
 }

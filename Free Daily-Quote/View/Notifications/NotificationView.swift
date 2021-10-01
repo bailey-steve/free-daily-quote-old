@@ -7,16 +7,10 @@
 
 import SwiftUI
 
-
-
 struct NotificationView: View {
     
     @EnvironmentObject var model: ContentModel
-    
-    @Binding var showSchedule: Bool
-    
-    
-    
+
     var body: some View {
         
         if model.notificationSetting == .denied {
@@ -25,21 +19,18 @@ struct NotificationView: View {
         else
         {
             VStack{
-                NotificationAllowedView(showSchedule: $showSchedule)
+                NotificationAllowedView()
             }
         }
-        
     }
 }
 
 struct NotificationView_Previews: PreviewProvider {
     
     @StateObject static var model = ContentModel(preview: true)
-    @State static var showSchedule = false
-    
+
     static var previews: some View {
-        NotificationView(showSchedule: $showSchedule)
-            .environmentObject(model)
-            
+        NotificationView()
+            .environmentObject(model)   
     }
 }

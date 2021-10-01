@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46121468BB2A21A6C69B2BD3 /* Pods_Free_Daily_Quote_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10607D6523F6B0BF642A97B8 /* Pods_Free_Daily_Quote_WatchKit_App.framework */; };
-		9262AE6D26F2236A00A5495A /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262AE6C26F2236A00A5495A /* Banner.swift */; };
+		9262AE6D26F2236A00A5495A /* AdsBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9262AE6C26F2236A00A5495A /* AdsBanner.swift */; };
 		92F7C13126F0B78000B8437B /* Free_Daily_QuoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */; };
 		92F7C13326F0B78000B8437B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F7C13226F0B78000B8437B /* ContentView.swift */; };
 		92F7C13526F0B78200B8437B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F7C13426F0B78200B8437B /* Assets.xcassets */; };
@@ -120,7 +120,7 @@
 		4F190FF6CBDCDAB3E2684CAD /* Pods-Free Daily-Quote WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit Extension/Pods-Free Daily-Quote WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		59C4EDE658621C3D8D931827 /* Pods-Free Daily-Quote WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit App/Pods-Free Daily-Quote WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		66ED67A62FBC3FDEB2038861 /* Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Free Daily-Quote WatchKit Extension/Pods-Free Daily-Quote WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
-		9262AE6C26F2236A00A5495A /* Banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		9262AE6C26F2236A00A5495A /* AdsBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsBanner.swift; sourceTree = "<group>"; };
 		92F7C12D26F0B78000B8437B /* Free Daily-Quote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Free Daily-Quote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92F7C13026F0B78000B8437B /* Free_Daily_QuoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free_Daily_QuoteApp.swift; sourceTree = "<group>"; };
 		92F7C13226F0B78000B8437B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -330,13 +330,12 @@
 		92F7C16E26F0B91900B8437B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				957E7E8127078141003D57CA /* Banners */,
 				95D0668E270238BE007E8A91 /* Notifications */,
 				92F7C13226F0B78000B8437B /* ContentView.swift */,
-				9262AE6C26F2236A00A5495A /* Banner.swift */,
-				95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */,
-				95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */,
-				95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */,
 				95DF5ACF26F914A0007F0CAC /* MainView.swift */,
+				95DF5ACD26F8B2D3007F0CAC /* MenuView.swift */,
+				95DF5AC926F3EA47007F0CAC /* TextWithBackingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +392,15 @@
 				95278D8D26FDFDB400E148FE /* Info.plist */,
 			);
 			path = "Free Daily Quote";
+			sourceTree = "<group>";
+		};
+		957E7E8127078141003D57CA /* Banners */ = {
+			isa = PBXGroup;
+			children = (
+				9262AE6C26F2236A00A5495A /* AdsBanner.swift */,
+				95DF5ACB26F8AD6C007F0CAC /* TheySaidSoBannerView.swift */,
+			);
+			path = Banners;
 			sourceTree = "<group>";
 		};
 		95D0668E270238BE007E8A91 /* Notifications */ = {
@@ -631,7 +639,7 @@
 			files = (
 				92F7C13326F0B78000B8437B /* ContentView.swift in Sources */,
 				92F7C18E26F0C07000B8437B /* Contents.swift in Sources */,
-				9262AE6D26F2236A00A5495A /* Banner.swift in Sources */,
+				9262AE6D26F2236A00A5495A /* AdsBanner.swift in Sources */,
 				92F7C18026F0BBF900B8437B /* ContentModel.swift in Sources */,
 				92F7C17126F0B98100B8437B /* Contents.swift in Sources */,
 				95DF5AD026F914A0007F0CAC /* MainView.swift in Sources */,
