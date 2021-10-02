@@ -52,7 +52,6 @@ class ContentModel: ObservableObject {
             updateNotificationStatus()
             getQuote()
         }
-        
     }
     
     func getPreview() {
@@ -80,14 +79,13 @@ class ContentModel: ObservableObject {
                 notificationSetting = s.authorizationStatus
             }
         }
-        
-        
     }
     
-    func recieveNotificationStatus()
-    {
+    func getNotificationTime(){
         
+        //let request = UNNotificationRequest(identifier: "Quote1234")
     }
+    
     
     func getQuote(){
         

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//import Firebase
+import Firebase
 import GoogleMobileAds
 
 
@@ -15,7 +15,7 @@ import GoogleMobileAds
 struct Free_Daily_QuoteApp: App {
     
     init() {
-        //FirebaseApp.configure()
+        FirebaseApp.configure()
                 
         GADMobileAds.sharedInstance().start(completionHandler: nil)
         

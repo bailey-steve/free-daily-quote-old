@@ -45,11 +45,12 @@ struct NotificationAllowedView: View {
                             
                             let trigger = UNCalendarNotificationTrigger(dateMatching: components, repeats: true)
                             
-                            // choose a random identifier
                             let request = UNNotificationRequest(identifier: "Quote1234", content: content, trigger: trigger)
                             
                             // add our notification request
                             UNUserNotificationCenter.current().add(request)
+                            
+                            
                             
                         } else if let error = error {
                             print(error.localizedDescription)
